@@ -13,7 +13,7 @@ rpm_48917 <- as.data.frame(rpm_48917)
 
 ## Read in .gtf and get some info about a gene
 ```
-mm10_GRCh38_gtf <- rtracklayer::import("/mnt/opt/refdata_atac/GRCh38_and_mm10/genes/genes.gtf")
+mm10_GRCh38_gtf <- rtracklayer::import("/mnt/opt/refdata/GRCh38_and_mm10/genes/genes.gtf")
 # get gene cords
 mm10_GRCh38_gtf[mm10_GRCh38_gtf@elementMetadata$gene_name == "AGRN" & mm10_GRCh38_gtf@elementMetadata$type == "gene"]
 
